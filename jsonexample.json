@@ -1,0 +1,4 @@
+var adi1={"employees":[{"firstname":"adi","lastname":"gunda","age":23},{"firstname":"nikki","lastname":"vudut","age":24}],
+			"students":[{"firstname":"aditya",
+		"lastname":"gundamaneni","age":20},{"firstname":"nikhila","lastname":"vuduthala","age":21}]};
+
