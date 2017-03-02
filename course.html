@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<style>
+body{
+
+
+background: #4CA1AF; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #4CA1AF , #C4E0E5); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #4CA1AF , #C4E0E5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}
+.inro{
+color:black;
+
+
+</style>
+</head>
+<body ng-app="">
+<div class="inro">
+<h4>Childcare Services</h4>
+<p>	We offer a wide range of activities for the Children attending The play school like: Cooking, Sports day, Messy day, Summer time (Pool day, Sand Play, Gardening) Barney's Childcare Centre services are offered all year round from Monday to Friday from 6:30 hrs till 18:30 hrs. Parents can choose from various packages of hours to suit their needs. The children age we care for is 4 months babies up to 5 years. Before and after school services and a Summer School Club is also provided for children 3-5 years old.</p><br></div>
+
+<hr>you can choose any one of the courses:- <br>
+<b>close the display</b><input type="checkbox" ng-model="course1"><br>
+hide IMAGE <input type="checkbox" ng-model="imageHide">
+<form>
+<input type="radio" ng-model="myVar" name="r1" value="dance ">Dance Course
+<input type="radio" ng-model="myVar" name="r1" value="design ">Design Course
+<input type="radio" ng-model="myVar" name="r1" value="beauty ">Beauty Course
+<input type="radio" ng-model="myVar" name="r1" value="leader  ">Ledership Course<br>
+<input type="radio" ng-model="myVar" name="r1" value="lang">Langauge Course
+<input type="radio" ng-model="myVar" name="r1"  value="fitness">Health & Fitness course</form>
+
+<div class="container" ng-switch="myVar" style="color:darkblue; " ng-hide="course1">
+<div ng-switch-when="dance">
+<h4>Dance Courses</h4>
+<img src="img/dance1.jpg" alt="dance" class="img" ng-hide="imageHide"></img>
+<p>Dance courses in Malta: Dancing is a typical art that involves movement of the body rhythmically to music, following a set of moves, steps and techniques to do a particular performance of dancing. You will learn to respond to different stimuli in order to develop knowledge and to achieve a clear understanding of dancing.</p>
+</div>
+<div ng-switch-when="design">
+<h4>Design Courses</h4>
+<img src="img/design1.jpg" class="img" ng-hide="imageHide" alt="design"></img>
+ <p>
+Design Courses in Malta: A plan or drawing produced for the construction of an object or a system. Designing has different connotations in different fields such as computing design, graphic design, photography, game design, Interior design and so much more. Through our design courses, you will be able to think outside the box, determine and establish that perfect design that helps the reader to understand with ease complicated information. </p>
+</div>
+<div ng-switch-when="beauty">
+<h4>Beauty Courses</h4>
+<img src="img/beauty1.jpg" ng-hide="imageHide" class="img" alt="beauty"></img>
+</p>Beauty courses in Malta: Beauty is a combination of qualities such as shape, colour or form that pleases the aesthetic senses, especially the sight. Beauty schools will provide high quality instructions which will give you the opportunity to work in a salon or furthermore, to own your own beauty business. </p>
+</div>
+<div ng-switch-when="leader">
+<h4>Leadership Courses</h4>
+<img src="img/leader1.jpg" ng-hide="imageHide" class="img" alt="leader"></img>
+<p>Leadership courses in Malta : Leadership is the key function to provide guidance and direct a group of individuals using their potential and support in the accomplishment of a common task. Studies of leadership have produced theories involving function behavior, power, vision, values, charisma and intelligence to identify individuals with moral force of character and instincts to lead.</p>
+</div>
+<div ng-switch-when="lang">
+
+ <h4>Language  Courses </h4>
+ <img src="img/lang1.jpg" ng-hide="imageHide" class="img" alt="lang"></img>
+<p>Language Schools in Malta are now world renowned for the top quality provided by each one. Awards have been given year after year for the success of different top notch school around the Maltese islands.</p>
+
+<p>Language is the main source of communication between one another. Work might also involve regular contact with speakers of foreign languages, hence the importance of knowing different languages. Studying, research and traveling are also other reasons why courses provided by these language schools are now so important!</p>
+
+</div>
+<div ng-switch-when="fitness">
+<h4>Health & Fitness Courses</h4>
+ <img src="img/fitness1.jpg" ng-hide="imageHide" class="img" alt="fitness"></img>
+<p>Health and Fitness courses in Malta: Health and fitness, its important for anyone to stay abreast of the latest developments in health, fitness, nutrition, medicine, wellness, diet recipes and weight loss. "Health is a state of complete physical mental and social well being, with the ability to lead you to a socially and economically productive life". </p>
+</div>
+</div>
+</body>
+</html>
